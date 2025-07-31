@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169103234757",
+    "project_id": "test-run-tracker",
+    "storage_bucket": "test-run-tracker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169103234757:android:335ac1d1022a94dfebc2ac",
+        "android_client_info": {
+          "package_name": "com.example.run_tracker_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWNbZ9F-Zq9sOVQR06kkeEMWJkKVQFaB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

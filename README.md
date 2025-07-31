@@ -1,16 +1,29 @@
-# run_tracker_flutter
+# 🏃‍♂️ Run Tracker – Flutter Engineering Test
 
-A new Flutter project.
+A simple yet powerful Flutter app to manually track your runs, view them on a map, add photos, and more. Includes OpenAI integration for generating motivational titles.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- User authentication (email & password)
+- Add a run with:
+  - Distance
+  - Duration
+  - Location name
+  - Optional photo
+- View runs in a list
+  - Tap to view full-size photo
+  - Tap "View Map" to open location on map (OpenStreetMap)
+- Automatic generation of run titles (via OpenAI)
+- Firebase backend
+- Persistent storage
+- Clean architecture
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🔑 Test Login
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Use the following test account to log in:
+
+```bash
+Email: test@test.com  
+Password: 12345678

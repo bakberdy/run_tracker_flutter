@@ -1,41 +1,59 @@
+
 # 🏃‍♂️ Run Tracker – Flutter Engineering Test
 
 A simple yet powerful Flutter app to manually track your runs, view them on a map, add photos, and more. Includes OpenAI integration for generating motivational titles.
 
 ## 🚀 Features
 
-- User authentication (email & password)
-- Add a run with:
-  - Distance
-  - Duration
-  - Location name
-  - Optional photo
-- View runs in a list
-  - Tap to view full-size photo
-  - Tap "View Map" to open location on map (OpenStreetMap)
-- Automatic generation of run titles (via OpenAI)
-- Firebase backend
-- Persistent storage
-- Clean architecture
+* ✅ User authentication (Firebase Auth)
+* 🏃 Add a run with:
+
+  * Distance
+  * Duration
+  * Location name
+  * Optional photo
+* 🗂️ View runs in a list
+
+  * Tap to view full-size photo
+  * Tap "View Map" to open location on map (OpenStreetMap)
+* ☁️ Firebase backend
+
+  * Firebase Auth
+  * Firebase Cloud Firestore
+  * Firebase Storage
 
 ---
 
 ## 🔑 Test Login
 
-Use the following test account to log in:
+Use the following test credentials to log in:
 
 ```bash
 Email: test@test.com  
 Password: 12345678
+```
 
 ---
 
-## 🚀 Getting Started
+## 🧪 Tech Stack
+
+| Area             | Technology                          |
+| ---------------- | ----------------------------------- |
+| Backend          | Firebase (Auth, Firestore, Storage) |
+| Authentication   | Firebase Auth                       |
+| Storage          | Firebase Storage                    |
+| Database         | Firebase Cloud Firestore            |
+| Maps             | OpenStreetMap + `flutter_map`       |
+| State Management | BLoC                                |
+
+---
+
+## 📦 Getting Started
 
 ### 1. 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/run_tracker_flutter.git
+git clone https://github.com/bakberdy/run_tracker_flutter.git
 cd run_tracker_flutter
 ```
 
@@ -45,7 +63,19 @@ cd run_tracker_flutter
 flutter pub get
 ```
 
-### 3. 📱 Run the App
+### 3. 🔐 Set Up Firebase
+
+Make sure you have set up Firebase for both Android and iOS:
+
+* Add your `google-services.json` to `android/app/`
+* Add your `GoogleService-Info.plist` to `ios/Runner/`
+* Enable:
+
+  * Email/password auth
+  * Firestore
+  * Firebase Storage
+
+### 4. 🤖 Run the App
 
 To run on a connected device or emulator:
 
@@ -53,18 +83,16 @@ To run on a connected device or emulator:
 flutter run
 ```
 
-Or to build APK for Android:
+To build APK for Android:
 
 ```bash
 flutter build apk
 ```
 
-Or to build for iOS (Mac only):
+To build for iOS (on macOS with Xcode installed):
 
 ```bash
 flutter build ios
 ```
-
-> ⚠️ Make sure you've set up Flutter correctly. See [Flutter installation guide](https://docs.flutter.dev/get-started/install).
 
 ---
